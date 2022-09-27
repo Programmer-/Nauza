@@ -1,9 +1,7 @@
 import React from "react";
-import { FlatList } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
 import ListItem from "../components/ListItem";
-import Constants from "expo-constants";
-
-console.log(Constants);
+import Screens from "../components/Screens";
 
 const messages = [
   {
@@ -22,18 +20,20 @@ const messages = [
 
 function MessagesScreen(props) {
   return (
-    <FlatList
-      data={messages}
-      keyExtractor={(message) => message.id.toString()}
-      renderItem={({ item }) => (
-        <ListItem
-          title={item.title}
-          subTitle={item.subTitle}
-          image={item.image}
-        />
-      )}
-    />
+    <Screens>
+      <FlatList
+        data={messages}
+        keyExtractor={(message) => message.id.toString()}
+        renderItem={({ item }) => (
+          <ListItem
+            title={item.title}
+            subTitle={item.desctription}
+            image={item.image}
+          />
+        )}
+      />
+    </Screens>
   );
 }
-
+const styles = StyleSheet.create({});
 export default MessagesScreen;
