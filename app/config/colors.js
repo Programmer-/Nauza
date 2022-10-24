@@ -11,4 +11,5 @@ export default {
   third: "#ad8e5e",
   fourth: "#7f838a",
   fifth: "#7e8c88",
+  danger: "#ff5252",
 };
