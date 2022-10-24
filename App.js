@@ -12,5 +12,5 @@ import ListItem from "./app/components/ListItem";
 import LIstItemSeparator from "./app/components/LIstItemSeparator";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <MessagesScreen />;
 }
