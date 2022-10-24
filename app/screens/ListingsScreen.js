@@ -13,9 +13,9 @@ const Listings = [
   },
   {
     id: 2,
-    title: "cute cat",
-    price: 0,
-    image: require("../assets/ocean-cat.jpg"),
+    title: "comfy couch",
+    price: "20,000",
+    image: require("../assets/couch.jpg"),
   },
 ];
 
