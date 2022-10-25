@@ -5,6 +5,7 @@ export default {
   white: "#fff",
   medium: "#6e6969",
   light: "#f8f4f4",
+  dark: "#0c0c0c",
   //samplecolors from artstation
   first: "#17120f",
   second: "#735d4b",
