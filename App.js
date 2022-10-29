@@ -10,7 +10,10 @@ import AppTextInput from "./app/components/AppTextInput";
 import { Picker } from "react-native";
 import AppPicker from "./app/components/AppPicker";
 import LoginScreen from "./app/screens/LoginScreen";
+import RegisterScreen from "./app/screens/RegisterScreen";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
-  return <LoginScreen />;
+  return <MessagesScreen />;
 }
