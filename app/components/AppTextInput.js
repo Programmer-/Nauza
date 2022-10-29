@@ -7,9 +7,18 @@ function AppTextInput({ icon, ...otherProps }) {
   return (
     <View style={styles.container}>
       {icon && (
-        <MaterialCommunityIcons name={icon} size={20} style={styles.icon} />
+        <MaterialCommunityIcons
+          name={icon}
+          size={20}
+          color={defaultStyles.colors.medium}
+          style={styles.icon}
+        />
       )}
-      <TextInput style={defaultStyles.text} {...otherProps} />
+      <TextInput
+        placeholderTextColor={defaultStyles.colors.medium}
+        style={defaultStyles.text}
+        {...otherProps}
+      />
     </View>
   );
 }
@@ -17,11 +26,11 @@ function AppTextInput({ icon, ...otherProps }) {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.light,
-    width: "100%",
-    marginVertical: 10,
     borderRadius: 25,
     flexDirection: "row",
+    width: "100%",
     padding: 15,
+    marginVertical: 10,
   },
   icon: {
     marginRight: 10,
