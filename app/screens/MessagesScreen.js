@@ -8,8 +8,10 @@ import Screens from "../components/Screens";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    desctription: "D1",
+    title:
+      "Used to truncate the text with an ellipsis after computing the text layout, including line wrapping, such that the total number of lines does not exceed this number. Setting this property to 0 will result in unsetting this value, which means that no lines restriction will be applied.",
+    desctription:
+      "Used to truncate the text with an ellipsis after computing the text layout, including line wrapping, such that the total number of lines does not exceed this number. Setting this property to 0 will result in unsetting this value, which means that no lines restriction will be applied.",
     image: require("../assets/ocean-cat.jpg"),
   },
   {
