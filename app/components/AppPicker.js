@@ -17,7 +17,9 @@ import Screens from "./Screens";
 function AppPicker({
   icon,
   items,
+  numberOfColumns = 1,
   onSelectItem,
+  PickerItemComponet = PickerItem,
   placeholder,
   selectedItem,
   width = "100%",
@@ -54,9 +56,11 @@ function AppPicker({
           <Button title="Close" onPress={() => setModalVisible(false)} />
           <FlatList
             data={items}
+            numColumns={numberOfColumns}
             keyExtractor={(item) => item.value.toString()}
             renderItem={({ item }) => (
-              <PickerItem
+              <PickerItemComponet
+                item={item}
                 label={item.label}
                 onPress={() => {
                   setModalVisible(false);
@@ -76,7 +80,6 @@ const styles = StyleSheet.create({
     backgroundColor: defaultStyles.colors.light,
     borderRadius: 25,
     flexDirection: "row",
-    width: "100%",
     padding: 15,
     marginVertical: 10,
   },
