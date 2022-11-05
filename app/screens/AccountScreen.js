@@ -1,5 +1,5 @@
 import React from "react";
-import Screens from "../components/Screens";
+import Screen from "../components/Screen";
 import ListItem from "../components/Lists/ListItem";
 import Icons from "../components/Icon";
 import { FlatList, StyleSheet, View } from "react-native";
@@ -25,7 +25,7 @@ const menuItems = [
 
 function AccountScreen() {
   return (
-    <Screens style={styles.screens}>
+    <Screen style={styles.screens}>
       <View style={styles.container}>
         <ListItem
           title="JUsto"
@@ -57,7 +57,7 @@ function AccountScreen() {
           IconComponent={<Icons name="logout" backgroundColor="#ffe66d" />}
         />
       </View>
-    </Screens>
+    </Screen>
   );
 }
 

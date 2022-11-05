@@ -10,12 +10,12 @@ function WelcomeScreen(props) {
       source={require("../assets/cart.jpg")}
     >
       <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require("../assets/logo-red.png")} />
+        <Image style={styles.logo} source={require("../assets/dallerem.png")} />
         <Text style={styles.tagline}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <AppButton title="Login" color="fourth"></AppButton>
-        <AppButton title="Register" color="fifth" />
+        <AppButton title="Login" color="sample4"></AppButton>
+        <AppButton title="Register" color="sample2" />
       </View>
     </ImageBackground>
   );

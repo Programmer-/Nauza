@@ -9,7 +9,7 @@ import {
   AppFormPicker as Picker,
   SubmitButton,
 } from "../components/forms";
-import Screens from "../components/Screens";
+import Screen from "../components/Screen";
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label("Title"),
@@ -52,7 +52,7 @@ const categories = [
 
 function ListingEditScreen() {
   return (
-    <Screens style={styles.container}>
+    <Screen style={styles.container}>
       <Form
         initialValues={{
           title: "",
@@ -88,7 +88,7 @@ function ListingEditScreen() {
         />
         <SubmitButton title="Post" color="secondary" />
       </Form>
-    </Screens>
+    </Screen>
   );
 }
 

@@ -3,7 +3,7 @@ import { FlatList, StyleSheet, View } from "react-native";
 import ListItem from "../components/Lists/ListItem";
 import ListItemDeleteAction from "../components/Lists/ListItemDeleteAction";
 import LIstItemSeparator from "../components/Lists/LIstItemSeparator";
-import Screens from "../components/Screens";
+import Screen from "../components/Screen";
 
 const initialMessages = [
   {
@@ -30,7 +30,7 @@ function MessagesScreen(props) {
     setMessages(messages.filter((m) => m.id !== message.id));
   };
   return (
-    <Screens>
+    <Screen>
       <FlatList
         data={messages}
         keyExtractor={(message) => message.id.toString()}
@@ -58,7 +58,7 @@ function MessagesScreen(props) {
           ]);
         }}
       />
-    </Screens>
+    </Screen>
   );
 }
 const styles = StyleSheet.create({});
