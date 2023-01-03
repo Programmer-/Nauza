@@ -32,5 +32,5 @@ const StackNavigator = () => (
 );
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <MessageScreen />;
 }
