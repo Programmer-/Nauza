@@ -12,6 +12,7 @@ import AccountScreen from "./app/screens/AccountScreen";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const Link = () => {
   const navigation = useNavigation();
@@ -60,8 +61,23 @@ const Account = () => (
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => (
-  <Tab.Navigator>
-    <Tab.Screen name="Feed" component={Tweets} />
+  <Tab.Navigator
+    tabBarOptions={{
+      activeBackgroundColor: "dodgerblue",
+      activeTintColor: "white",
+      inactiveTintColor: "black",
+      inactiveBackgroundColor: "gray",
+    }}
+  >
+    <Tab.Screen
+      name="Feed"
+      component={Tweets}
+      options={{
+        tabBarIcon: ({ size }) => (
+          <MaterialCommunityIcons name="home" size={size} />
+        ),
+      }}
+    />
     <Tab.Screen name="Account" component={Account} />
   </Tab.Navigator>
 );
