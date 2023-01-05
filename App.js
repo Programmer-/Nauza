@@ -15,6 +15,7 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AuthNavigator from "./app/navigators/AuthNavigator";
 import navigationTheme from "./app/navigators/navigationTheme";
+import AppNavigator from "./app/navigators/AppNavigator";
 
 const Account = () => (
   <Screen>
@@ -48,7 +49,7 @@ const TabNavigator = () => (
 export default function App() {
   return (
     <NavigationContainer theme={navigationTheme}>
-      <AuthNavigator />
+      <AppNavigator />
     </NavigationContainer>
   );
 }
